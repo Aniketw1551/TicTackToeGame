@@ -16,16 +16,27 @@ namespace TicTacToe
                 Board[i] = ' ';
             }
         }
-        public static void ShowBoard()
+        public static void choosePlayerLetter()
         {
-            char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-            Console.WriteLine("  |   |  ");
-            Console.WriteLine("{0} | {1} | {2}", arr[1], arr[2], arr[3]);
-            Console.WriteLine("  |   |  ");
-            Console.WriteLine("{0} | {1} | {2}", arr[4], arr[5], arr[6]);
-            Console.WriteLine("  |   |  ");
-            Console.WriteLine("{0} | {1} | {2}", arr[7], arr[8], arr[9]);
-            Console.WriteLine("  |   |  ");
+            Console.WriteLine("Choose letter X or O");
+            char Playerletter = char.ToUpper(Console.ReadLine()[0]);
+            char ComputerLetter;
+            if (Playerletter == 'X' || (Playerletter == 'O'))
+            {
+                if (Playerletter == 'X')
+                {
+                    ComputerLetter = 'O';
+                }
+                else
+                {
+                    Playerletter = 'O';
+                    ComputerLetter = 'X';
+                }
+                Console.WriteLine("Player Chooses letter: " + Playerletter);
+                Console.WriteLine("Computer letter: " + ComputerLetter);
+            }
         }
     }
 }
+
+            
