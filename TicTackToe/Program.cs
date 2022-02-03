@@ -13,6 +13,7 @@ namespace TicTacToe
         {
             Console.WriteLine("Welcome to TicTacToe program");
             TicTacToe ticTacToe = new TicTacToe();
+            ticTacToe.CreateBoard();
             TicTacToe.choosePlayerLetter();
             TicTacToe.ShowBoard();
             Console.ReadLine(); 
