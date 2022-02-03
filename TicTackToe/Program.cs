@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TicTackToe
+namespace TicTacToe
 {
     internal class Program
     {
        
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to TicTackToe program");
-            TicTackToe ticTackToe = new TicTackToe();
-            ticTackToe.Board();
+            Console.WriteLine("Welcome to TicTacToe program");
+            TicTacToe.CreateBoard();
+            TicTacToe.ChooseLetter();
+            Console.ReadLine(); 
         }
     }
 }

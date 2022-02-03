@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TicTackToe
+namespace TicTacToe
 {
-    public class TicTackToe
+    public class TicTacToe
     {
         public void Board()
         {
